@@ -1,0 +1,68 @@
+@import "bootstrap/scss/bootstrap";
+
+
+$font1: 'Montserrat', sans-serif !important;
+$font2: 'Open Sans', sans-serif !important;
+$primary: #ffc55f !important;
+$primary-dark: #f5b649 !important;
+$secondary: #F9F1E6 !important;
+
+// .navbar-brand img {
+//   width: 50px;
+// }
+
+// .btn {
+//   &-custom1 {
+//     background-color: ;
+//   }
+// }
+
+h1, h2, h3, h4, h5, h6, button {
+  font-family: $font1;
+}
+
+p {
+  font-family: $font2;
+}
+
+.navbar-brand {
+  font-family: $font1;
+}
+
+.navbar {
+  ul {
+    font-family: $font1;
+    a {
+      color: #000 !important;
+    }
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:hover {
+    background-color: $primary-dark;
+    border-color: $primary-dark;
+  }
+}
+
+.bg-primary {
+  background-color: $secondary;
+}
+
+.card {
+  &-btn {
+    text-decoration: none;
+    color: #111;
+    &:hover {
+      color: $primary-dark;
+    }
+  }
+}
+
+#programs-and-events {
+  .carousel-item {
+    width: 300px;
+  }
+}
