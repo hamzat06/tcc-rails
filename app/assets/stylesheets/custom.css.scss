@@ -1,5 +1,6 @@
 @import "bootstrap/scss/bootstrap";
-
+@import "owl.carousel/dist/assets/owl.carousel.min.css";
+@import "owl.carousel/dist/assets/owl.theme.min.css";
 
 $font1: 'Montserrat', sans-serif !important;
 $font2: 'Open Sans', sans-serif !important;
@@ -61,8 +62,10 @@ p {
   }
 }
 
-#programs-and-events {
-  .carousel-item {
-    width: 300px;
-  }
+hr {
+  width: 25px;
+  height: 5px !important;
+  opacity: .5;
+  margin: 0 auto !important;
+  background-color: #444 !important;
 }
