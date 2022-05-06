@@ -20,13 +20,13 @@ ActiveStorage.start();
 import "controllers";
 
 $(document).on("turbolinks:load", function () {
-    $(".owl-carousel").owlCarousel({
-        loop: true,
+    $(".owl-carousel1").owlCarousel({
         margin: 10,
         responsiveClass: true,
         nav: false,
         loop: true,
         autoplay: true,
+        items: 4,
         responsive: {
             0: {
                 items: 1,
@@ -37,10 +37,17 @@ $(document).on("turbolinks:load", function () {
                 nav: false,
             },
             1000: {
-                items: 4,
+                items: 3,
                 nav: false,
-                loop: false,
             },
         },
+    });
+
+    $(".owl-carousel2").owlCarousel({
+        nav: false,
+        loop: true,
+        autoplay: true,
+        items: 1,
+        dots: true,
     });
 });

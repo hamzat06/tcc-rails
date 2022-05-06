@@ -1,10 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white position-sticky">
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold fs-3" href="#">
-      <!--
-        <%= image_tag("tcclogo.png") %>
-      -->
-      Navbar
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      
+        <%= image_tag("tcclogo.png", style: "width: 50px !important;") %>
+        <h6 class="d-none d-md-block fw-bold mb-0 ms-2">
+          TRIUMPHANT
+          <br>
+          CHRISTIAN CENTRE
+        </h6>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -12,10 +15,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <%= link_to "Home", root_path, class: "nav-link active" %>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <%= link_to "About", about_path,  class:"nav-link" %>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Ministries</a>
@@ -35,12 +38,15 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Events & Programs</a>
         </li>
+        <li class="nav-item">
+          <%= link_to "Contact", contact_path,  class:"nav-link" %>
+        </li>
       </ul>
       <ul class="navbar-nav ms-auto">
-        <a class="btn btn-primary px-3 py-2">
+        <%= link_to livestreams_path, class:"btn btn-primary px-3 py-2" do %>
             Livestream
             <i class="fa-solid fa-tv ms-1"></i>
-        </a>
+        <% end %>
       </ul>
     </div>
   </div>

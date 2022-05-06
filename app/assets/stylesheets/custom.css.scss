@@ -7,6 +7,8 @@ $font2: 'Open Sans', sans-serif !important;
 $primary: #ffc55f !important;
 $primary-dark: #f5b649 !important;
 $secondary: #F9F1E6 !important;
+$dark: #53504C;
+$dark1: #494743;
 
 // .navbar-brand img {
 //   width: 50px;
@@ -48,8 +50,42 @@ p {
   }
 }
 
-.bg-primary {
-  background-color: $secondary;
+.bg {
+  &-primary {
+    background-color: $secondary;
+  }
+  &-dark1 {
+    background-color: $dark;
+  }
+  &-dark2 {
+    background-color: $dark1;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer {
+  h5, h6 {
+    color: #F9F1E6 !important;
+  }
+  a, p {
+    color: #CCC0C0 !important;
+  }
+
+  .footer-links {
+    p {
+      border-bottom: .1px solid #CCC0C0 !important;
+      padding-bottom: 3px;
+      margin-bottom: 5px !important;
+    }
+  }
+
+  a:hover {
+    color: $primary;
+  }
 }
 
 .card {
@@ -68,4 +104,56 @@ hr {
   opacity: .5;
   margin: 0 auto !important;
   background-color: #444 !important;
+}
+
+.text-primary {
+  color: #F9F1E6 !important;
+}
+
+#team {
+  a:hover {
+    color: $primary;
+  }
+}
+
+#contact-address {
+  p {
+    margin-bottom: 0 !important;
+  }
+}
+
+.hero-container {
+  height: 600px !important;
+}
+
+.hero-carousel {
+  height: 100%;
+
+  .carousel-indicators {
+    button {
+      width: 12px !important;
+      height: 12px !important;
+      border-radius: 50%;
+    }
+  }
+
+  .carousel-inner {
+    width: 100% !important;
+    height: 100% !important;
+
+    .caption {
+      display: grid;
+      place-items: center;
+      width: 100vw !important;
+      height: 600px !important;
+      background-color: transparent !important;
+      position: absolute !important;
+      top: 0 !important;
+      color: white !important;
+
+      .container {
+        max-width: 1000px !important;
+      }
+    }
+  }
 }
